@@ -1,0 +1,14 @@
+***How To Secure a Containerized Node.js Application with Nginx, Let's Encrypt, and Docker Compose | DigitalOcean
+https://www.digitalocean.com/community/tutorials/how-to-secure-a-containerized-node-js-application-with-nginx-let-s-encrypt-and-docker-compose
+
+
+Nginx Node e Mongo com Docker | Fórum | School of Net
+https://www.schoolofnet.com/forum/topico/nginx-node-e-mongo-10265
+
+
+Yoiutube: Dockerizing a Node.js, Express, MongoDB App with NGINX Reverse Proxy using Docker Compose
+https://www.youtube.com/watch?v=4zUQEkDdNR0
+
+
+Youtube: How to setup Docker and Nginx with MongoDB,Express,React and Node | Step by Step - Part 1
+https://www.youtube.com/watch?v=iDFrqmbiJM0
