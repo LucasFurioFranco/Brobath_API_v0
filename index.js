@@ -44,9 +44,10 @@ app.listen(3000)
 const DB_USER = process.env.DB_USER
 const DB_PASSWORD = encodeURIComponent(process.env.DB_PASSWORD)
 const DB_NAME = process.env.DB_NAME
+const DB_HOSTNAME = process.env.DB_HOSTNAME
 const APP_PORT = process.env.APP_PORT
 
-var connectTo = `mongodb+srv://${DB_USER}:${DB_PASSWORD}@cluster1.y8bph.mongodb.net/${DB_NAME}?retryWrites=true&w=majority`;
+var connectTo = `mongodb+srv://${DB_USER}:${DB_PASSWORD}@${DB_HOSTNAME}/${DB_NAME}?retryWrites=true&w=majority`;
 console.log("connectTo", connectTo)
 //console.log("connectTo", connectTo)
 
