@@ -1,0 +1,4 @@
+npm install express nodemon mongoose
+add "start": "nodemon ./index.js localhost 3000" inside 'script' object, on package.json file
+npm install dotenv e adicionar as variáveis de config (user e senha uinclusos pfv) no arquivo .env, e adicioná-lo ao git ignore
+npm start

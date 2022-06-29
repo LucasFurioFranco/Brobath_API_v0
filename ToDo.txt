@@ -1,0 +1,14 @@
+Use the following verification for when using _id from MongoDB
+Source: https://stackoverflow.com/questions/14940660/whats-mongoose-error-cast-to-objectid-failed-for-value-xxx-at-path-id
+
+if (id.match(/^[0-9a-fA-F]{24}$/)) {
+  // Yes, it's a valid ObjectId, proceed with `findById` call.
+}
+
+
+BETTER YET - use this one
+var mongoose = require('mongoose');
+mongoose.Types.ObjectId.isValid('your id here');
+
+
+//-------------------------------------------------
