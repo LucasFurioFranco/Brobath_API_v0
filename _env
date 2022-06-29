@@ -1,4 +1,4 @@
-//Rename this file to .env, delete this line and use your data below
+//Rename this file to .env, delete this line and use your own data below
 DB_USER=mongodb_user_name
 DB_PASSWORD=mongodb_password_cant_contain_hash_caractere
 DB_NAME=mongodb_db_name
