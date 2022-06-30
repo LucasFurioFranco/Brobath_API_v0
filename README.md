@@ -24,6 +24,5 @@ Super curso de express: https://www.youtube.com/watch?v=K5QaTfE5ylk (foi crucial
       - localhost:3001/person
       - localhost:3001/product
 
-
     Eu ainda tenho que fazer um comando pra popular um pouco o BD, então essas rotas vão retornar arrays vazios inicialmente :(
 
