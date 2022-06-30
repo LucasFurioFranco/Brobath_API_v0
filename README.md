@@ -18,7 +18,8 @@ Super curso de express: https://www.youtube.com/watch?v=K5QaTfE5ylk (foi crucial
     Pode ser no MongoDB da sua máquina também.
     
   4) Configura o altere o _env pra .env, apague a primeira linha e altere as congfigs de acesso ao MongoDB (veja o link que eu recomendei na linha 5, lá o Matheus Battisti mostra como pegar essas credenciais do MongpDB Atlas. Se tiver usando o da sua máquina, vai ser o seu usuário, senha e no host provavelmente é só colocar "localhost" (sem as aspas) - não testei mas creio que funcione XD
-     Pra porta pode ser a que você quiser, desde que esteja disponívcel, claro (vai na tentativa e erro... eu fui de 3001 e deu bão!).
+  
+     Pra porta pode ser a que você quiser, desde que esteja disponível, claro (vai na tentativa e erro... eu fui de 3001 e deu bão!).
 
   5) Execute no terminal, novamente na pasta raiz de seu projeto, o comando "npm start". Feito isso, dada a porta de você colocou na etapa anterior é a que será usada pra acessar a API. Por exemplo, se você estiver rodando na sua máquina (localhost) pela porta 3001, pra acessar a API é só usar as rotas de localhost:3001, como
       - localhost:3001/person
