@@ -13,7 +13,7 @@ Super curso de express: https://www.youtube.com/watch?v=K5QaTfE5ylk (foi crucial
   
   2) Vá pelo terminal na pasta do projeto e execute a linha "npm install"
   
-  3) Tenha uma conta no MongoDB. Sugiro o Atlas. Té gratuíto e é uma mão na roda!
+  3) Tenha uma conta no MongoDB. Sugiro o Atlas. É gratuíto e é uma mão na roda!
     link: https://www.mongodb.com/atlas/database
     Pode ser no MongoDB da sua máquina também.
     
