@@ -14,7 +14,7 @@ const Product = mongoose.model("Product", {
     variantDescriptionPre: String, //Description of variant before group description
     variantDescriptionPos: String, //Description of variant after group description
     content: String,
-    categories: [Array],
+    categories: [String],
     groupId: String, //product:item_group_id
     sku: String //product:retailer_item_id
     
