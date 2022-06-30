@@ -9,7 +9,7 @@ Super curso de express: https://www.youtube.com/watch?v=K5QaTfE5ylk (foi crucial
 
 #Como rodar:
 
-  1) Clocar pro seu diretório preferido
+  1) Clonar esse projeto pro seu diretório preferido
   
   2) Vá pelo terminal na pasta do projeto e execute a linha "npm install"
   
