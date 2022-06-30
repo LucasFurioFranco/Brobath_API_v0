@@ -18,6 +18,8 @@ app.use(
 //For JSON payloads (for requests and responses)
 app.use(express.json())
 
+//ejs is responsible to rendering HTML pages dynamically
+app.set("view engine", "ejs")
 
 
 //------------------------------------
@@ -25,17 +27,30 @@ app.use(express.json())
 //------------------------------------
 
 const routes = {
-  person: require("./routes/personRoutes"),
-  product: require("./routes/productRoutes")
+  person: require("./routes/api/person"),
+  product: require("./routes/api/product"),
+  web: require("./routes/web/all")
 }
 
-app.use("/person", routes.person)
-app.use("/product", routes.product)
+app.use("/api/person", routes.person)
+app.use("/api/product", routes.product)
 
+const enableWeb = true;
+if(enableWeb) {
+  app.use("/web", routes.web)
+
+  //Web index
+  app.get("/", (req, res) => {
+    res.status(404).render("index.ejs", {
+      timestamp: Date.now()
+    })
+  })
+
+}
 
 //Wildcard
 app.get("*", (req, res) => {
-  res.status(404).json({error: "this route does not exists"})
+  res.status(404).json({error: "this route does not exist"})
 })
 
 

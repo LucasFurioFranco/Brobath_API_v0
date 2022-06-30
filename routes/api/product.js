@@ -1,5 +1,5 @@
 const router = require("express").Router()
-const Product = require("../models/Product")
+const Product = require("../../models/Product")
 
 function productExtractor(obj) {
   return {
