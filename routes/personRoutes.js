@@ -98,7 +98,10 @@ router.patch("/:id", async (req, res) => {
     } else {
       //Podemos saber quantos dados foram atualizados por meio do
       //updatedPerson.modifiedCount
-      res.status(200).json(Object.assign({updatedFields: updatedPerson.modifiedCount}, person))
+      res.status(200).json({
+        message: "Person " + (updatedPerson.modifiedCount ? "updated" : "not updated - no fields to update - new values are equal to stored values"),
+        updatedFields: updatedPerson.modifiedCount
+      })
 
     }
 
