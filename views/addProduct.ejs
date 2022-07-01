@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="facebook-domain-verification" content="galqcf6vpqbh1tbj3e5tcwhk7yax5e" />
+
+    <title>Welcome to nginx!</title>
+
+    <style>
+      body {
+          width: 35em;
+          margin: 0 auto;
+          font-family: Tahoma, Verdana, Arial, sans-serif;
+      }
+    </style>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MC769N8');</script>
+    <!-- End Google Tag Manager -->
+
+
+    <style>
+      .border_solid {
+        border-style: solid;
+      }
+    </style>
+  </head>
+
+
+  <body>
+
+    <header>
+      <!--
+        
+        <a id="product_preview" href="/preview/product">Preview do produto</a>
+        <script>
+          document.querySelector("#product_preview").addEventListener("click", function(evt) {
+            evt.preventDefault();
+
+            //gets the currently inputed data and opens a new tag passing the product data as payload, so the server can generate the preview page
+
+          }, false);
+        </script>
+      -->
+    </header>
+
+
+
+    <section class="inputs">
+      <br><br>
+
+      <div class="name">
+        <label>Nome</label>
+        <input name="name" type="text" placeholder="Nome do produto">
+      </div>
+      <br><br><br>
+
+      <div class="image">
+        <!--TODO: Add a possibility to add the file from user's computer with an input with type "file"-->
+        <label>URL da imagem do produto</label>
+        <input id="image_input" name="image" type="text" size="100" placeholder="URL do produto">
+        <br><br>
+        <button id="image_input_preview" onclick="changeImagePreviewSrc()">Preview</button>
+        <br><br>
+        <img id="image_preview" class="border_solid" width="300" height="300" src="" hidden>
+        <script>
+          function changeImagePreviewSrc() {
+            //Code to preview the image when user 
+            var input = document.querySelector("#image_input");
+            var image = document.querySelector("#image_preview");
+            image.setAttribute("src", input.value);
+            image.removeAttribute("hidden");
+          }
+        </script>
+      </div>
+      <br><br><br>
+
+      <div class="description">
+        <label>Descrição</label>
+        <textarea name="description" rows="10" cols="100" placeholder="Descrição do produto"></textarea>
+      </div>
+      <br><br><br>
+
+      <div class="brand">
+        <label>Marca do produto</label>
+        <input name="brand" type="text" placeholder="Nome">
+      </div>
+      <br><br><br>
+
+      <div class="stock">
+        <label>Estoque inicial</label>
+        <input name="stock" type="number">
+      </div>
+      <br><br><br>
+
+      <div class="condition">
+        <label>Condição</label>
+        <select name="condition">
+          <option value="new">Novo</option>
+          <option value="used">Usado</option>
+        </select>
+      </div>
+      <br><br><br>
+
+      <div class="price">
+        <label>Preço</label>
+        <input name="price" type="Number">
+      </div>
+      <br><br><br>
+
+      <div class="priceTo">
+        <label>Preço de desconto (opcional)</label>
+        <input name="priceTo" type="Number">
+      </div>
+      <br><br><br>
+
+      <div class="currency">
+        <label>Moeda</label>
+        <select name="currency">
+          <option value="BRL">BRL</option>
+          <option value="EUR">EUR</option>
+          <option value="USD">USD</option>
+        </select>
+      </div>
+      <br><br><br>
+
+      <!--TODO: For later, add the following inputs
+        -  variantName: String
+        -  content: String
+        -  categories: [String]
+        -  groupId: String
+        -  sku: String
+      -->
+
+    </section>
+
+
+
+    <footer>
+
+    </footer>
+
+  </body>
+
+</html>

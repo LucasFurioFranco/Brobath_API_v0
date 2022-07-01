@@ -13,8 +13,6 @@ function productExtractor(obj) {
     priceTo: obj.priceTo,
     currency: obj.currency,
     variantName: obj.variantName,
-    variantDescriptionPre: obj.variantDescriptionPre,
-    variantDescriptionPos: obj.variantDescriptionPos,
     content: obj.content,
     categories: obj.categories,
     groupId: obj.groupId,
