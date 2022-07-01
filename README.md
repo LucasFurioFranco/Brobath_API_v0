@@ -22,8 +22,9 @@ Super curso de express: https://www.youtube.com/watch?v=K5QaTfE5ylk (foi crucial
      Pra porta pode ser a que você quiser, desde que esteja disponível, claro (vai na tentativa e erro... eu fui de 3001 e deu bão!).
 
   5) Execute no terminal, novamente na pasta raiz de seu projeto, o comando "npm start". Feito isso, dada a porta de você colocou na etapa anterior é a que será usada pra acessar a API. Por exemplo, se você estiver rodando na sua máquina (localhost) pela porta 3001, pra acessar a API é só usar as rotas de localhost:3001, como
-      - localhost:3001/person
-      - localhost:3001/product
+      - localhost:3001/api/person
+      - localhost:3001/api/product
+      - localhost:3001/web/add_product
 
     Eu ainda tenho que fazer um comando pra popular um pouco o BD, então essas rotas vão retornar arrays vazios inicialmente :(
 
