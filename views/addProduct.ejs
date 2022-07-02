@@ -137,6 +137,35 @@
         -  sku: String
       -->
 
+      <button id="register_product">Registar produto</button>
+
+      <script>
+        (function() {
+          document.querySelector("#register_product").addEventListener("click", function(evt) {
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "/api/product", true);
+
+            xhr.onload = function() {
+                //Calback to be used after attempt of registering the product to the DB
+            };
+
+            var payload = JSON.stringify(Array.from(document.querySelectorAll("section.inputs [name]")).reduce((payload, input) => {
+                payload[input.name] = input.value;
+                return payload;
+            }, {}));
+
+            xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+
+            xhr.send(payload)
+          }, false)
+        })()
+      </script>
+      
+      <!--button>Salvar como rascunho</button-->
+
+
+      <br><br><br>
+
     </section>
 
 
